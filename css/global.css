@@ -1,0 +1,164 @@
+@charset "UTF-8";
+
+/*Global Format and Style*/
+
+a,ul, ol, li,form,input,button,h1,h2,h3,h4,h5,h6,p,span,label{
+	margin: 0px;
+	padding: 0px;
+	font-size: 100%;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+.clear{
+	clear: both;
+	height: 0px;
+	overflow: hidden;
+}
+
+.line-clear{
+	clear: both;
+	height: 20px;
+	overflow: hidden;
+}
+
+.capitalText{text-transform: uppercase;}
+.noMargin{margin: 0px !important;}
+
+html,body{width: 100%;height: 100%;}
+
+body{
+	margin: 0;
+	padding: 0;
+	line-height: 1em;
+	color: #4C4646;
+	font-family: dosis;
+	font-size: 14px;
+	 
+}
+
+#page{
+	max-width: 1100px;
+	margin: 0 auto;
+	position: relative;
+	height: 350px;
+}
+
+.taskbar{
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	padding: 15px 0px 15px 0px;
+	background: #ecf0f1;
+	z-index: 1001;
+}
+
+.taskbar p{
+	font-family: UbuntuRegular;
+	font-size: 16px;
+	color: #2ecc71;
+	padding: 0px 100px 0px 100px;
+	text-align: right;
+}
+
+.taskbar p a{
+	border: 2px #2ecc71 solid;
+	padding: 5px 15px 5px 15px;
+}
+
+.shopping-cart{
+	position: absolute;
+	width: 25px;
+	height: 20px;
+	background: url(../images/digi-shoping.png) no-repeat;
+	background-size: contain;
+	top: 13px;
+	right: 60px;
+	cursor: pointer;
+}
+
+nav{
+	width: 100%;
+	position: fixed;
+	top: 40px;
+	height: 80px;
+	background: #fff;
+	z-index: 1000;
+	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.16), 0px 2px 5px 0px rgba(0, 0, 0, 0.23);
+}
+
+section{
+	max-width: 1100px;
+	margin: 0px auto;
+	position: relative;
+	/*border: 1px #111 dotted;*/
+}
+
+section.top-bar{
+	padding: 0px 0px 10px 0px;
+	font-family: Hind;
+	font-size: 15px;
+	line-height: 1.5rem;
+}
+
+.headLogo{
+	float: left;
+	background: url(../images/digichron-logo-small.png) no-repeat;
+	text-indent: -9999px;
+	background-size: cover;
+	width: 160px;
+	height: 65px;
+	
+}
+
+.headMenu{
+	position: relative;
+	top: 20px;
+	list-style: none;
+	float: right;
+	font-family: Mos;
+	font-size: 17px;
+	padding: 0px;
+	background: #1777FF;
+	color: #fff;
+	/*border: 1px #111 solid;*/
+
+}
+
+.headMenu li{
+	display: inline-block;
+	*display: inline;
+	/*margin-left: 15px;*/
+	padding: 10px;
+	cursor: pointer;
+}
+
+.headMenu li:hover{
+	background: #2ecc71;
+}
+
+.headMenu li:first-child{
+	margin-left: 0px;
+}
+
+.subMenu{
+	display: none;
+	position: absolute;
+	top: 44px;
+	left: 0px;
+	background: #1777FF;
+	transition: all 0.2s ease;
+}
+
+.subMenu li{
+	display: block;
+	*display: block;
+	padding: 10px 20px 10px 20px;
+}
+
+.headMenu li:hover .subMenu{
+	display: block;
+}
